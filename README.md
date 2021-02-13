@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/68988143-b32f-43f7-bd2b-d04b55298e35/deploy-status)](https://app.netlify.com/sites/codindb/deploys)
+
 # cv
 
 ### This was my very first project :relaxed:
