@@ -342,7 +342,12 @@ ul,ol
     height: auto;
     margin: 0 auto;
 }
-
+.mw85 {
+    max-width: 85%;
+}
+.tacenter {
+    text-align: center;
+}
 /* EXPERIENCE */
 
 #experience
