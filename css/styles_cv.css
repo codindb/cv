@@ -59,6 +59,9 @@ ul,ol
     text-transform: uppercase;
     font-weight: bold;
 }
+.nav-pills {
+    margin: 10px;
+}
 .btn-group.btn-group-toggle > label.btn {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
