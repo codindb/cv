@@ -52,7 +52,7 @@ i18next.init({
             "jobDesc1Line1": "Within a Scrum team, I took part in the development of the Front-end of an MES (Manufacturing execution systems) web application",
             "jobDesc1Line2": "Main tasks: Integration / Development of re-usable components. Connecting the Front-end to the API's endpoints (provided by the Back-end team)",
             "drivingLicence": "Driving licences",
-            "vehicles": "Car and Motor Bike",
+            "vehicles": "Car and Motorcycle",
             "madeIn": `Made in Brittany<img style="margin-left: 20px; "src="images/Produit_en_Bretagne_logo.png" alt="Produit en Bretagne">`,
             "age": "36 years old",
             "address": "Address",
