@@ -33,6 +33,7 @@ i18next.init({
             "greetings": "HI, I AM DAMIEN",
             "catchPhrase": "I invest myself alongside entrepreneurs and project owners, in order to create, maintain or improve their web applications<br><br>As a freelance developer, passionate about web development, I’d love to help you achieve your goals",
             "downloadCV": "Download CV",
+            "cvHref":"docs/DamienBouvetEn.pdf",
             "navMe": "ME",
             "skills": "SKILLS",
             "tools": "TOOLS",
@@ -63,6 +64,7 @@ i18next.init({
             "greetings": "HELLO, MOI C'EST DAMIEN",
             "catchPhrase": "Je m'investis aux côtés des entrepreneurs et porteurs de projets, afin de créer, maintenir ou améliorer leurs applications web<br><br>Développeur Freelance, passionné par le développement web, c'est avec plaisir que je vous aiderai à atteindre vos objectifs",
             "downloadCV": "Télécharger CV",
+            "cvHref":"docs/DamienBouvet.pdf",
             "navMe": "MOI",
             "skills": "COMPÉTENCES",
             "tools": "OUTILS",
@@ -97,6 +99,7 @@ const translate = () => {
     document.getElementById('greetings').innerHTML = i18next.t('greetings');
     document.getElementById('catchPhrase').innerHTML = i18next.t('catchPhrase');
     document.getElementById('downloadCV').innerHTML = i18next.t('downloadCV');
+    document.getElementById('downloadCV').href = i18next.t('cvHref');
     document.getElementById('navMe').innerHTML = i18next.t('navMe');
     document.getElementById('navSkills').innerHTML = i18next.t('skills');
     document.getElementById('pageSkills').innerHTML = i18next.t('skills');
