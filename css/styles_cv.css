@@ -25,6 +25,7 @@ section .heading
 section .heading h2
 {
     text-transform: uppercase;
+    margin: 40px 0;
 }
 .blue-divider
 {
@@ -57,6 +58,13 @@ ul,ol
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: bold;
+}
+.btn-group.btn-group-toggle > label.btn {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-group.btn-group-toggle > label.btn.active {
+    background-color: #d0effa;
 }
 .nav-pills .nav-link
 {
@@ -357,6 +365,11 @@ ul,ol
 #experience .heading h2
 {
     color: #fff;
+}
+.badge {
+    color: white;
+    background-color: #5bc2e7;
+    font-size: 14px;
 }
 .timeline-body p
 {

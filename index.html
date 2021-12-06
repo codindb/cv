@@ -15,7 +15,17 @@
 
     <body data-spy="scroll" data-target=".navbar" data-offset="200">
 
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="btn-group btn-group-toggle" role="group" aria-label="languages" data-toggle="buttons">
+            <label onclick="switchToFr()" class="btn btn-light active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked>🇫🇷
+            </label>
+            <label onclick="switchToEn()" class="btn btn-light">
+                <input type="radio" name="options" id="option2" autocomplete="off">🇺🇸
+            </label>
+            <!-- <button onclick="switchToEn()" type="button" class="btn btn-light">🇺🇸</button>
+            <button onclick="switchToFr()" type="button" class="btn btn-light">🇫🇷</button> -->
+        </div>
         <a class="navbar-brand" href="#"></a>
 
         <a class="navbar-brand d-md-none">
@@ -23,27 +33,26 @@
                 <i></i><i></i><i></i>
             </div>
         </a>
-
         <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
             <ul class="nav nav-pills navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">Moi</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Technologies</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Formations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Loisirs</a></li>
+                <li class="nav-item"><a id="navMe" class="nav-link" href="#about"></a></li>
+                <li class="nav-item"><a id="navSkills" class="nav-link" href="#skills"></a></li>
+                <li class="nav-item"><a id="navXp" class="nav-link" href="#experience">Expériences</a></li>
+                <li class="nav-item"><a id="navEducation" class="nav-link" href="#education">Formations</a></li>
+                <li class="nav-item"><a id="navPortfo" class="nav-link" href="#portfolio"></a></li>
                 <li class="nav-item"><a class="nav-link" href="#infos">Infos</a></li>
             </ul>
         </div>
     </nav>
 
         <section id="about" class="container-fluid">
-            <div class="col-8 col-lg-4 profile-picture">
+            <div class="col-8 col-lg-4 col-xl-2 profile-picture">
                 <img src="images/Me.jpeg" alt="Damien Bouvet" class="rounded-circle">
             </div>
             <div class="heading">
-                <h2>Hello, moi c'est Damien</h2>
-                <h4>Développeur Web</h4>
-                <a href="docs/DamienBouvet.pdf" class="button1" id="button1" target="_blank">Télécharger CV</a>
+                <h2 id="greetings"></h2>
+                <h4 id="catchPhrase"></h4>
+                <a href="docs/DamienBouvet.pdf" class="button1" id="downloadCV" target="_blank"></a>
                 <div><br><br></div>
                 <div class="container">
                     <div class="row icons">
@@ -75,7 +84,7 @@
         <section id="skills" data-offset="60">
             <div class="blue-divider"></div>
             <div class="heading">
-                <h2>Technologies</h2>
+                <h2 id="pageSkills"></h2>
             </div>
             <div class="container">
                 <div class="row logo">
@@ -89,10 +98,10 @@
                         <img src="images/Javascript.png" alt="Logo JS">
                     </div>
                     <div class="col-6 col-md-4 tacenter" data-aos="zoom-in" data-aos-duration="1000">
-                        <img class="mw85" src="images/firebase.png" alt="Logo Firebase">
+                        <img class="mw85" src="images/Vuejs.png" alt="Logo Vue JS">
                     </div>
                     <div class="col-6 col-md-4 tacenter" data-aos="zoom-in" data-aos-duration="1000">
-                        <img class="mw85" src="images/Vuejs.png" alt="Logo Vue JS">
+                        <img class="mw85" src="images/firebase.png" alt="Logo Firebase">
                     </div>
                     <div class="col-6 col-md-4 tacenter" data-aos="zoom-in" data-aos-duration="1000">
                         <img class="mw85" src="images/Strapi.png" alt="Logo Strapi">
@@ -102,7 +111,7 @@
             <div class="col-12"><br><br><br><br></div>
             <div class="blue-divider"></div>
             <div class="heading">
-                <h2>Outils</h2>
+                <h2 id="tools"></h2>
             </div>
             <div class="container">
                 <div class="row logo">
@@ -126,7 +135,7 @@
             <div class="container">
                 <div class="white-divider"></div>
                 <div class="heading">
-                    <h2>Expériences Significatives</h2>
+                    <h2 id="pageXp"></h2>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -134,14 +143,18 @@
                         <div class="timeline-panel-container-inverted">
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Développeur Web</h4>
+                                    <h4 id="jobTitle3"></h4>
                                     <h2>Freelance</h2>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> 2021-Présent</p>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 10/2021 - 12/2021</p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Vue.Js</p>
-                                    <p>Strapi</p>
-                                    <p>Firebase</p>
+                                    <p id="jobDesc3Line1"></p>
+                                    <p id="jobDesc3Line2"></p>
+                                    <p id="jobDesc3Line3"></p> 
+                                    <p id="jobDesc3Line4"></p> 
+                                    <p id="jobDesc3Line5"></p> 
+                                    <span class="badge badge-pill badge-light">Vue.js</span>
+                                    <span class="badge badge-pill badge-light">Firebase</span>
                                 </div>
                             </div>
                         </div>
@@ -151,54 +164,40 @@
                         <div class="timeline-panel-container">
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Développeur Front</h4>
-                                    <h2>Quasar Solutions / Obilog</h2>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> 2020-2021</p>
+                                    <h4 id="jobTitle2"></h4>
+                                    <h2>Freelance</h2>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 08/2021 - 10/2021</p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Javascript</p>
-                                    <p>Sencha / Ext JS</p>
-                                    <p>SCSS</p>
-                                    <p>Programmation Orientée Objet</p>
+                                    <p id="jobDesc2Line1"></p>
+                                    <p id="jobDesc2Line2"></p>
+                                    <p id="jobDesc2Line3"></p>
+                                    <span class="badge badge-pill badge-light">Vue.js</span>
+                                    <span class="badge badge-pill badge-light">Strapi</span>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
                         <div class="timeline-panel-container-inverted">
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Membre du Comité de Direction</h4>
-                                    <h2>Impérial Palace Casino</h2>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> 2012-2019</p>
+                                    <h4 id="jobTitle1"></h4>
+                                    <h2>Quasar Solutions / Obilog</h2>
+                                    <p class="text-muted"><small class="fas fa-clock"></small> 06/2020 - 06/2021</p>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>Gestion opérationelle des salles de jeux (machines à sous/jeux de tables)</p>
-                                    <p>Formation des équipes</p>
-                                    <p>Respect de la règlementation</p>
-                                    <p>Relationnel clients</p>
-                                    <p>Détermination et implementation de la stratégie commerciale</p>
+                                    <p id="jobDesc1Line1"></p>
+                                    <p id="jobDesc1Line2"></p>
+                                    <span class="badge badge-pill badge-light">Javascript</span>
+                                    <span class="badge badge-pill badge-light">SCSS</span>
+                                    <span class="badge badge-pill badge-light">Sencha/Ext JS</span>
+                                    <span class="badge badge-pill badge-light">OOP</span>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-                        <div class="timeline-panel-container">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Croupier</h4>
-                                    <h2>Seven Casino</h2>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> 2009-2011</p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Gestion et animation des tables de jeux (Roulette, Black-Jack, Poker)</p>
-                                    <p>Respect de la règlementation</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -207,10 +206,10 @@
             <div class="container">
                  <div class="blue-divider"></div>
                 <div class="heading">
-                    <h2>Formations</h2>
+                    <h2 id="pageEducation"></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="education-block">
                             <h5>2019 - 2021</h5>
                             <span class="fas fa-graduation-cap"></span>
@@ -221,19 +220,8 @@
                             <p>En alternance</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="education-block">
-                            <h5>2009 - 2010</h5>
-                            <span class="fas fa-graduation-cap"></span>
-                            <h3>Licence professionnelle</h3>
-                            <h4>Université Paris-Est</h4>
-                            <div class="blue-divider"></div>
-                            <p id="red">Management des établissements de loisirs</p>
-                            <p>Mention: TB</p>
-                        </div>
-                    </div>
-                     <div class="col-md-4">
-                         <div class="education-block">
                             <h5>2003 - 2007</h5>
                             <span class="fas fa-graduation-cap"></span>
                             <h3>Bachelor of Science</h3>
@@ -251,7 +239,7 @@
             <div class="container">
                 <div class="white-divider"></div>
                 <div class="heading">
-                    <h2>Loisirs</h2>
+                    <h2 id="pagePortfo"></h2>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
@@ -292,15 +280,15 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <h3>Permis</h3>
-                            <h4>Voiture et Moto</h4>
+                            <h3 id="drivingLicence"></h3>
+                            <h4 id="vehicles"></h4>
                         </div>
                           <div class="carousel-item">
-                              <h3>Produit en Bretagne<img style="margin-left: 20px; "src="images/Produit_en_Bretagne_logo.png" alt="Produit en Bretagne"></h3>
-                            <h4>35 ans</h4>
+                              <h3 id="madeIn"></h3>
+                            <h4 id="age"></h4>
                         </div>
                           <div class="carousel-item">
-                            <h3>Domicilié à</h3>
+                            <h3 id="address"></h3>
                             <h4>Chavanod 74650</h4>
                         </div>
                     </div>
@@ -338,9 +326,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.5.4/i18next.min.js" integrity="sha512-Wed6z3/FcvEcgUoSt+A0DkOOSGJW64acCLY5LCA2zfmFosJblZufCuYMJlFr39ML6zYnx3GAvrqoQ/JnbOA9lA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--My JS-->
-    <script src="js/script_cv.js"></script>
+    <script type="text/javascript" src="js/script_cv.js"></script>
 
     </body>
 </html>
