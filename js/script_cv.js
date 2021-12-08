@@ -31,7 +31,7 @@ i18next.init({
       en: {
         translation: {
             "greetings": "HI, I AM DAMIEN",
-            "catchPhrase": "I invest myself alongside entrepreneurs and project owners, in order to create, maintain or improve their web applications<br><br>As a freelance developer, passionate about web development, I’d love to help you achieve your goals",
+            "catchPhrase": "I invest myself alongside entrepreneurs and project owners, in order to create, maintain or improve their web applications<br><br>As a front-end developer, passionate about web development, I’d love to help you achieve your goals",
             "downloadCV": "Download CV",
             "cvHref":"docs/DamienBouvetEn.pdf",
             "navMe": "ME",
@@ -62,7 +62,7 @@ i18next.init({
       fr: {
         translation: {
             "greetings": "HELLO, MOI C'EST DAMIEN",
-            "catchPhrase": "Je m'investis aux côtés des entrepreneurs et porteurs de projets, afin de créer, maintenir ou améliorer leurs applications web<br><br>Développeur Freelance, passionné par le développement web, c'est avec plaisir que je vous aiderai à atteindre vos objectifs",
+            "catchPhrase": "Je m'investis aux côtés des entrepreneurs et porteurs de projets, afin de créer, maintenir ou améliorer leurs applications web<br><br>Développeur Front-end, passionné par le développement web, c'est avec plaisir que je vous aiderai à atteindre vos objectifs",
             "downloadCV": "Télécharger CV",
             "cvHref":"docs/DamienBouvet.pdf",
             "navMe": "MOI",
